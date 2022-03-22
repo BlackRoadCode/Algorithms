@@ -12,3 +12,5 @@ export function addTwoDigits2(n: any): number {
 }
 
 console.log(addTwoDigits(23)); 
+
+/** Nota: La solución optimizada solo funciona correctamente si se le pasa un entero de dos dígitos, sin embargo; la primer solución funciona con enteros de cualquier número de cifras (respetando los límites del tipo de dato), por lo que convendría analizar qué implementación conviene más según las necesidades. */

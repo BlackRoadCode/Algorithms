@@ -1,6 +1,5 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+# allLongestStrings
 
----
 Given an array of strings, return another array containing all of its longest strings.
 
 **Example**

@@ -1,8 +1,6 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+
 ---
 Given a sorted array of integers a, find an integer x from a such that the value of
-
-Dada una matriz ordenada de enteros a, encuentre un entero x de tal que el valor de sea el menor posible (aquí abs denota el valor absoluto). Si hay varias respuestas posibles, da salida a la más pequeña.
 
 Lo que se quiere encontrar en resumen es **el valor medio**.
 
@@ -43,7 +41,7 @@ A non-empty array of integers, sorted in ascending order.
 - **[output] integer**
 
 
-## Un poco más a fondo
+## Un poco más a fondo (notes)
 
 ### Math.floor
 

@@ -14,7 +14,7 @@ console.log( Math.floor( 4.7 ) );
 console.log( Math.floor( -2.3 ) );
 console.log( Math.floor( -6.4 ) );
 
-// Using Math.round()
+// Using Math.round() - error
 console.log( Math.round( 1.5 ) );
 console.log( Math.round( 4.7 ) );
 console.log( Math.round( -2.3 ) );

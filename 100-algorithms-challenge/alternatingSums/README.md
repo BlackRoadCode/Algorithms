@@ -1,4 +1,4 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+# alternatingSums
 
 ##### Algorithm Challenge Available At [CodeFights](https://codefights.com/arcade/intro/level-4/cC5QuL9fqvZjXJsW9)
 ---

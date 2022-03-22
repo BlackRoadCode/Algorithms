@@ -1,6 +1,5 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+# alphabeticShift
 
----
 Given a string, replace each its character by the next one in the English alphabet (z would be replaced by a).
 
 **Example**
