@@ -1,4 +1,4 @@
-### Check Out My [YouTube Channel](https://www.YouTube.com/CodingTutorials360)
+# Array Conversion
 
 ##### Algorithm Challenge Available At [CodeFights](https://codefights.com/arcade/code-arcade/spring-of-integration/dwA8RtDF86WucuoaQ)
 ---
