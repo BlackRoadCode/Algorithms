@@ -22,9 +22,9 @@ By the end of the course you will be:
 
 | 1 to 10 | 11 to 20 | 21 to 30 |
 | ----------- | ----------- | ----------- |
-| [absoluteValuesSumMinimization](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/absoluteValuesSumMinization) | [areEquallyStrong](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/areEquallyStrong) |Text |
-| [add](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/add) | Text |Text |
-| [addBorder](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/addBorder) | Text |Text |
+| [absoluteValuesSumMinimization](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/absoluteValuesSumMinization) | [areEquallyStrong](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/areEquallyStrong) | [areSimilar](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/areSimilar) |
+| [add](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/add) | [arrayChange](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/arrayChange) |Text |
+| [addBorder](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/addBorder) | [arrayConversion](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/arrayConversion) |Text |
 | [addTwoDigits](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/addTwoDigits) | Text |Text |
 | [adjacentElementsProduct](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/adjacentElementsProduct) | Text |Text |
 | [allLongestStrings](https://github.com/BlackRoadCode/Algorithms/tree/main/100-algorithms-challenge/allLongestStrings) | Text |Text |
