@@ -9,7 +9,7 @@ int main() {
 
     if ( edad > 18 ){
         cout << "Es un adulto.";
-    } else if ( edad > 3 && edad < 18 ){
+    } else if ( edad > 3 and edad < 18 ){
         cout << "Es un joven.";
     } else {
         cout << "Es un bebe.";
