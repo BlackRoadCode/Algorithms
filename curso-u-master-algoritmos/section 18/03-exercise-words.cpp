@@ -4,14 +4,6 @@ using namespace std;
 
 int main() {
 
-    compareTwoWords();
-
-
-    return 0;
-}
-
-string compareTwoWords(){
-
     string a;
     string b;
 
@@ -21,11 +13,16 @@ string compareTwoWords(){
     cout << "Introduce la segunda palabra: " << endl;
     getline( cin, b );
 
-    cout << a << endl;
-    cout << b << endl;
+    if ( a < b ){
+        cout << a << " < " << b;
+    } else if ( b < a ){
+        cout << b << " < " << a;
+    } else {
+        cout << b << " = " << a;
+    }
 
+    cout << endl;
 
-        // if ( a < b ){
-        //     ;
-        // } else if ( b> a ){}
+    return 0;
 }
+
