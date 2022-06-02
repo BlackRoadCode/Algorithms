@@ -9,6 +9,6 @@ int factorial( int n ){
 }
 
 int main() {
-    cout << factorial( 4 ) << endl;
+    cout << factorial( 10 ) << endl;
     return 0;
 }
