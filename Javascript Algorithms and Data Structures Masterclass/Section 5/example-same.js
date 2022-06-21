@@ -12,15 +12,15 @@ function same( arr1, arr2 ){
         if( correctIndex === -1 ){
             return false;
         }
-
-        arr2.splice(correctIndex, 1);
         
+        console.log(arr2);
+        arr2.splice(correctIndex, 1);
     }
 
     return true;
 
 }
 
-console.log(same( [1,2,3], [4,1,9] )); // true
-console.log(same( [1,2,3], [1,9] )); //) false
-console.log(same( [1,2,1], [4,4,1] )); // false (same frecuency)
+console.log(same( [1,2,3,2], [4,1,9,4] )); // true
+// console.log(same( [1,2,3], [1,9] )); //) false
+// console.log(same( [1,2,1], [4,4,1] )); // false (same frecuency)
