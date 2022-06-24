@@ -18,7 +18,3 @@ console.log(sumRange(10));
 //                                 devuelve 3
 //                 devuelve 6
 // devuelve 10
-
-
-
-
