@@ -5,8 +5,6 @@ function sumRange( num ){
 
 console.log(sumRange(10));
 
-19
-
 // Ejemplo de funcionamiento
 // sumRange( 4 )
 //     return 4 + sumRange( 3 )
