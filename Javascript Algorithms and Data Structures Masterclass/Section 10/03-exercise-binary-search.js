@@ -1,22 +1,38 @@
-function binarySearch(arr, value) {
+// function binarySearch(arr, value) {
 
-    let leftPointer = 0;
-    let rigthPointer = arr.length - 1;
+//     let leftPointer = 0;
+//     let rigthPointer = arr.length - 1;
     
-    while( leftPointer <= rigthPointer ){
-        let middlePointer = Math.floor( ( leftPointer + rigthPointer ) / 2 );
+//     while( leftPointer <= rigthPointer ){
+//         let middlePointer = Math.floor( ( leftPointer + rigthPointer ) / 2 );
 
-        if( arr[middlePointer] < value ){
-            leftPointer = middlePointer + 1;
-        } else if ( arr[middlePointer] > value ){
-            rigthPointer = middlePointer - 1;
-        } else {
-            return middlePointer;
-        }
+//         if( arr[middlePointer] < value ){
+//             leftPointer = middlePointer + 1;
+//         } else if ( arr[middlePointer] > value ){
+//             rigthPointer = middlePointer - 1;
+//         } else {
+//             return middlePointer;
+//         }
+//     }
+
+//     return -1;
+// }
+
+function binarySearch(arr, elem) {
+    let start = 0;
+    let end = arr.length - 1;
+    let middle = Math.floor( ( start + end ) / 2 );
+    
+    while( arr[middle] !== elem && start <= end ){
+        if( elem < arr[middle] ) end = middle - 1;
+        else start = middle + 1;
+        middle = Math.floor( ( start + end ) / 2 );
     }
 
-    return -1;
+    return ( arr[middle] == elem ) ? middle : -1;
 }
+
+
 
 let states = [ "AK - Alaska", "AL - Alabama", "AR - Arkansas", "AS - American Samoa", "AZ - Arizona", "CA - California", "CO - Colorado", "CT - Connecticut", "DC - District of Columbia", "DE - Delaware", "FL - Florida", "GA - Georgia", "GU - Guam", "HI - Hawaii", "IA - Iowa", "ID - Idaho", "IL - Illinois", "IN - Indiana", "KS - Kansas", "KY - Kentucky", "LA - Louisiana", "MA - Massachusetts", "MD - Maryland", "ME - Maine", "MI - Michigan", "MN - Minnesota", "MO - Missouri", "MS - Mississippi", "MT - Montana", "NC - North Carolina", "ND - North Dakota", "NE - Nebraska", "NH - New Hampshire", "NJ - New Jersey", "NM - New Mexico", "NV - Nevada", "NY - New York", "OH - Ohio", "OK - Oklahoma", "OR - Oregon", "PA - Pennsylvania", "PR - Puerto Rico", "RI - Rhode Island", "SC - South Carolina", "SD - South Dakota", "TN - Tennessee", "TX - Texas", "UT - Utah", "VA - Virginia", "VI - Virgin Islands", "VT - Vermont", "WA - Washington", "WI - Wisconsin", "WV - West Virginia", "WY - Wyoming"];
 
