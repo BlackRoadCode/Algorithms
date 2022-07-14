@@ -1,19 +1,12 @@
 
 function mergeSort( arr ){
+    if( arr.length <= 1 ) return arr;
 
-    let start = 0;
     let middle = Math.floor( arr.length / 2 );
+    let left = mergeSort(arr.slice( 0, middle ));
+    let right = mergeSort(arr.slice( middle ));
 
-    let newArrLeft = arr.slice( start, middle );
-    let newArrRight = arr.slice( middle, arr.length );
-    
-    if ( newArrLeft.length >= 1 && newArrRight.length >= 1 ){
-        mergeSort( newArrLeft );
-        mergeSort( newArrRight );
-    }
-
-    return merge( newArrLeft, newArrRight );
-
+    return merge( left, right );
 }
 
 function merge(arr1, arr2) {
