@@ -40,8 +40,12 @@ function pivot(arr, start = 0, end = arr.length - 1){
     }
 
     swap( arr, start, swapIdx );
+
+    console.log( arr );
+
     return swapIdx;
 }
 
-console.log(pivot([4, 8, 2, 1, 5, 7, 6, 3]));
-console.log(pivot([5, 2, 1, 8, 4, 7, 6, 3], 0));
+// console.log(pivot([4, 8, 2, 1, 5, 7, 6, 3]));
+// console.log(pivot([5, 2, 1, 8, 4, 7, 6, 3], 0));
+console.log(pivot([28,41,4,11,16,1,40,14,36,37,42,18], 0));
