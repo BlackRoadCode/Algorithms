@@ -20,23 +20,19 @@ function pivot( arr, start = 0, end = arr.length - 1 ){
 }
 
 function quicksort( arr, left = 0, right = arr.length - 1 ){
-
+    
     if( left < right ){
         let pivotIdx = pivot( arr, left, right );
+
         // left
         quicksort( arr, left, pivotIdx - 1 );
         // rigth
         quicksort( arr, pivotIdx + 1, right );
     }
-
+    
     return arr;
 }
 
 console.log(quicksort([4, 8, 2, 1, 5, 7, 6, 3]));
-console.log(quicksort([5, 2, 1, 8, 4, 7, 6, 3]));
-
-
-// - Llamar al pivot helper en el array.
-// - Cuando el helper retorne el índice del pivote actualizado, recursivamente llamar al pivot helper en el 
-//  subarray a la izquierda de ese índice y en el subarray a la derecha del índice.
-// El caso base ocurre cuando cuentes con un subarray con menos de dos elementos.
+console.log(quicksort([4,6,9,1,2,5]));
+console.log(quicksort([1,2,3,4,5,6,7,8,9])); // worst case
