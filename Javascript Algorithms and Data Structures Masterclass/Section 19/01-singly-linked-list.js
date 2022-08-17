@@ -129,30 +129,56 @@ class SinglyLinkedList {
                 return true;
         }
     }
-
+    
     remove( index ){
-        if ( index < 0 || index > this.length ) return undefined;
+        if ( index < 0 || index >= this.length ) return undefined;
         if ( index === 0 ) return this.shift();
-        if ( index >= this.length -1 ) return this.pop();
+        if ( index === this.length - 1 ) return this.pop();
 
+        let previousNode = this.get( index - 1 );
+        let removed = previousNode.next;
+
+        previousNode.next = removed.next;
+        this.length--;
+        return removed;
     }
 
-    
-    // - Si el índice es el mayor o igual que el length - 1, pop.
-    // - Si el índice es 0, shift.
+    reverse(){
+        let node = this.head;
+        this.head = this.tail;
+        this.tail = node;
 
-    // - De otro modo, usar el método get para accesar al nodo en el índice -1.
-    // - Setear la propiedad next del nodo ubicado para que sea igual al next del siguiente nodo.
-    // - Decrementar el length en 1.
-    // - Retornar el valor del nodo removido.
+        let prev = null;
+        let next = null;
+        for (let i = 0; i < this.length; i++) {
+            next = node.next;
+            node.next = prev;
+            prev = node;
+            node = next;
+        }
+    }
 
+    print(){
+        let arr = [];
+        let current = this.head;
+        while( current ){
+            arr.push( current.value );
+            current = current.next;
+        }
+        console.log(arr);
+        return arr;
+    }
 }
 
 let list = new SinglyLinkedList();
-list.push('hello');
-list.push('world');
-list.push('since');
+list.push(1);
+list.push(2);
+list.push(3);
+list.push(4);
+list.push(5);
 
-console.log(list);
-console.log( list.insert( 3, 'nuevo nodo' ) );
-console.log( list );
+console.log(list.print());
+
+list.reverse()
+
+console.log(list.print());
